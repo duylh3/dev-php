@@ -1,6 +1,5 @@
 <?php 
 	include_once 'db/function.php';
-	
 	$db = new PDO ( DB_INFO, DB_USER, DB_PASS );
 	if($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['submit'] == 'submit'){
 		$fullname = testInput($_POST['fullname']);
