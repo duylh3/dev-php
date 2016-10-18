@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lap trinh web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0px;
+
+                background: url(images/bg-body.png);
+                background-position:center top;
+            }
+            .main{
+                width: 700px;
+                margin: auto;
+            }
+            .header{
+                background-image: url(images/bg-header.jpg);
+                background-position:center top;
+                height: 140px;
+                background-repeat: no-repeat;
+            }
+            h1{
+                margin: 0px;
+                line-height: 150px;
+                padding-left: 20px;
+                font-style: italic;
+                color: #cdcdcd;
+                opacity: 0.8;
+            }
+            h4{
+                line-height: 90px;
+            }
+            .menu{
+                background-image: url(images/bg-menu.png);
+                height: 35px;
+                padding-left: 20px;
+                line-height: 35px;
+               
+            }
+            .menu a{
+                 color: #ffffff;
+                 padding-left: 15px;
+                 text-decoration: none;
+            }
+            .right{
+                width: 180px;
+                background-color: #f0f0f0;
+            }
+            .left{
+                float: left;
+                width: 520px;
+
+            }
+            .right{
+               background : url(images/bg-feed.gif) 50% top no-repeat;
+                height: 50px;
+                float: right;
+            }
+            .footer{
+                background-image: url(images/bg-footer.jpg);
+                background-repeat: no-repeat;
+                height: 90px;
+                width: auto;
+                clear: both;
+                margin-top: 50px;
+                line-height: 90px;
+                color: #fff;
+                padding: 5px;
+            }
+            .bg-banner{
+                background-image: url(images/bg-ad-top.png);
+                height: 70px;
+                width: 480px;
+            }
+            .title{
+                font-size: 40px;
+                color: green;
+                margin-top: 15px;
+            }
+            .posted{
+                font-style: italic;
+                color: white;
+                text-shadow: 1px 1px 2px #000000;
+            }
+            .content{
+                padding-left: 8px;
+            }
+            p{
+                line-height: 1.5;
+                text-align: justify;
+            }
+
+            
+            ul li {
+                border-bottom: 0.5px solid #E6E6E6;
+                padding: 5px;
+                margin-right: 5px;
+                list-style-type: none;
+                color: #000000;
+
+            }
+            ul li a {
+                text-decoration: none;
+                color: #000000;
+            }
+        
+            .newfeed{
+                background: url(images/button-feed.png) center top no-repeat;
+                height: 25px;
+            }
+            .newfeed:hover{
+                background-position: center -25px;
+            }
+            .comment{
+                display: inline;
+            }
+            .text{
+                color: green;
+                    text-align: right; 
+    margin: 0; 
+    padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1>Site Title</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Link One</a> &nbsp
+                <a href="#">Link Two</a> &nbsp
+                <a href="#">Link Three</a> &nbsp
+                <a href="#">Link Four</a> &nbsp
+                <a href="#">Link Five</a> &nbsp
+            </div>
+            <div class="container">
+                <div class="left">
+                    <div class="bg-banner">                       
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                        Lorem Ipsum
+                        </div>
+                        <div class="posted">
+                            Posted on 30 November 2006
+                        </div>
+                        <div class="description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>    
+                        </div>
+                        <div class="comment">
+                            
+                            <img src="images/icon-comment.png"> <span class="text"> 3 comments </span>
+                        </div>                     
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="newfeed">                     
+                    </div>
+                    <ul>
+                        <li><a href="#">Link One</a></li>
+                        <li><a href="#">Link Two</a></li>
+                        <li><a href="#">Link Three</a></li>
+                        <li><a href="#">Link Four</a></li>
+                        <li><a href="#">Link Five</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+    </body>
+</html>

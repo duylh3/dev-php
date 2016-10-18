@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body{
+                /*padding: 0px;*/
+                margin: 0px;
+            }
+            .main{
+                width:750px;
+                /*background: blue;*/
+                margin: auto;   
+            }
+            .header{
+                top:0;
+                width: auto;
+                line-height: 50px;
+                height: 50px;
+                background: #E4E4E4;
+            }
+            .menu{
+                background: #D6AAA9;
+                /*height: 25px;*/
+                padding: 5px;
+            }
+            .right{
+                width: 230px; 
+                float: none; 
+                display: table-cell; 
+                vertical-align: top; 
+                background-color: #A9ABD6;  
+            }
+            .left{
+                width: 520px;
+                float: none; 
+                display: table-cell; 
+                vertical-align: top; 
+                background-color: #A8D4A9;  
+            }
+            .footer{
+                width: auto;
+                padding: 5px;
+                clear: both;
+                background-color: #D5D4A9;
+            }
+            h1,h2{
+                margin:0;
+                
+                margin-left: 10px;
+            }
+            p{
+                margin-left: 10px;
+            }
+            .clear{	
+                clear:both;
+            }
+            .container{
+                display: table; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1>Header</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Option 1</a> &nbsp
+                <a href="#">Option 2</a> &nbsp
+                <a href="#">Option 3</a> &nbsp
+                <a href="#">Option 4</a> &nbsp
+                <a href="#">Option 5</a> &nbsp
+            </div>
+            <div class="container">              
+                <div class="left">
+                    <h1>Column 1</h1>
+                    <p><a href="#">456 Berea Street Home</a></p>
+                    <p><a href="#">Simple 2 Column CSS layout</a></p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus augue ut egestas lacinia. Cras vitae odio sed est ultricies varius vel bibendum lacus. 
+                        Nulla eget euismod orci, dignissim pellentesque ligula. Aliquam mattis vitae ipsum sed pharetra. 
+                        Suspendisse consectetur nisl sit amet nisl fermentum bibendum. Donec tempus tincidunt nisi, 
+                        vitae varius velit vehicula ac. Quisque viverra auctor dui, a volutpat ante gravida quis. 
+                        Integer erat massa, lacinia ut nisi eu, scelerisque mollis magna. Morbi feugiat pretium urna, 
+                        et volutpat dui lacinia in.
+                    </p>
+                    <p>   
+                        Curabitur fringilla lacus risus, vel dapibus odio tincidunt non.
+                        Sed sagittis odio sit amet fringilla egestas. Aenean a turpis ac tellus hendrerit placerat. 
+                        Phasellus hendrerit tellus interdum bibendum dignissim. Nulla facilisi. 
+                        Vivamus ultrices vehicula nulla a pulvinar. Praesent suscipit eu felis gravida luctus. Etiam enim mi,
+                        tempus quis convallis quis, vestibulum sit amet erat. Nam volutpat varius velit, a elementum libero tempor id. 
+                        Pellentesque magna ligula, accumsan sit amet varius interdum, mattis suscipit lorem. 
+                        Mauris ullamcorper sem sit amet volutpat pellentesque. Nunc urna mi, porta sed elit ac, sollicitudin 
+                        venenatis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    </p>                
+                </div>
+                <div class="right">
+                    <h1>Column 2</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus augue ut egestas lacinia. Cras vitae odio sed est ultricies varius vel bibendum lacus. 
+                        Nulla eget euismod orci, dignissim pellentesque ligula.
+                    </p>
+
+                    <ul>
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                        <li><a href="#">Option 4</a></li>
+                        <li><a href="#">Option 5</a></li>
+                        <li><a href="#">Option 6</a></li>
+                        <li><a href="#">Option 7</a></li>
+                        <li><a href="#">Option 8</a></li>
+                        <li><a href="#">Option 9</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title> A Simple HTML Example Page </title>
+        <style type="text/css">
+            table, th, td {
+                border: 1px solid black;
+            }
+            input{
+               margin-bottom: 5px;
+            }
+            fieldset{
+                margin: 5px;
+            }
+            select{
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/logo.png" alt="hello html5" />
+        <h1>About</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br>
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br>
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat<br>
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim<br>
+            id est laborum.
+        </p>
+        <h1>Intro</h1>
+        <video controls>
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+            <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+            <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogv">
+            <source src="http://techslides.com/demos/sample-videos/small.3gp" type="video/3gp">
+        </video>
+        <h1>Our Locations</h1>
+        <ul>
+            <li>
+                USA
+            </li>
+            <li style="list-style: none">
+                <ul>
+                    <li>New York</li>
+                    <li>Columbus</li>
+                    <li>Austin</li>
+                    <li>Philly</li>
+                </ul>
+            </li>
+            <li>
+                World
+            </li>
+            <li style="list-style: none">
+                <ul>
+                    <li>Ottawa</li>
+                    <li>Sydney</li>
+                </ul>
+            </li>
+        </ul>  
+        <h1>Upcoming Classes</h1>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>JavaScript & jQuery</td>
+            </tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>HTML & CSS</td>
+            </tr>
+        </table>
+        <h1>Sign Up!</h1>
+        <form action="#">
+            Name:<input type="text"><br>
+            Email:<input type="email"><br>
+            Location: 
+            <select name="location">
+                <option value="sanf">San Fracisco</option>
+                <option value="ny">New York</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="sex" value="female">Female
+                <input type="radio" name="sex" value="male">Male            
+            </fieldset>
+            Experiance:<br>
+            <textarea name="experiance" rows="2" cols="30">
+            </textarea><br>
+            <input type="button" value="Sign up!">
+        </form><br><br>
+        <a href="http://twitter.com">Twitter</a> | <a href="http://www.facebook.com">Facebook</a> | <a href="#">Flickr</a>
+    </body>
+</html>
