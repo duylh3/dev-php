@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+
+<div id="myTable">
+</div>
+<br>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="addRow()">Add Row</button>
+<script>
+function myFunction() {
+    
+    var myTableDiv = document.getElementById("myTable");
+      
+    var table = document.createElement('TABLE');
+    
+    table.setAttribute("id","abc");
+    
+    var tableBody = document.createElement('TBODY');
+    table.appendChild(tableBody);
+      
+    for (var i=0; i<2; i++){
+       var tr = document.createElement('TR');
+       tableBody.appendChild(tr);
+       
+       for (var j=0; j<2; j++){
+           var td = document.createElement('TD');
+           td.width='75';
+           td.appendChild(document.createTextNode("Cell " + i + "," + j));
+           tr.appendChild(td);
+       }
+    }
+    myTableDiv.appendChild(table);  	
+}
+function addRow(){
+	var table = document.getElementById('abc');
+	var row = document.createElement('TR');
+	table.appendChild(row);
+	var td = document.createElement('TD');
+	
+	td.appendChild(document.createTextNode("Cell"));
+	td.appendChild(document.createTextNode("Cell 1"));
+	row.appendChild(td);
+	
+}
+</script>
+
+</body>
+</html>
+
