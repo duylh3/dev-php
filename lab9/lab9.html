@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-table, td {
-    border: 1px solid black;
-}
-</style>
-</head>
-<body>
+    <head>
+        <title>javascript dom</title>
+        <style>
+            table, td {
+                border: 1px solid black;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <h2>JavaScript DOM</h2>
+        <div id="domTable">
+        </div>
+        <br>
+        <button class="btn btn-success" onclick="createTable()">Create table</button>
+        <button class="btn btn-success" onclick="addRow()">Add Row</button>
+        <button class="btn btn-success" onclick="addColumn()">Add Column</button>
+        <button class="btn btn-success" onclick="delRows()">Delete Row</button>
+        <button class="btn btn-success" onclick="delColumns()">Delete Column</button>
+        <button class="btn btn-success" onclick="delAlls()">Delete Table</button>
+        <script>
+            function createTable() {
+                var myTableDiv = document.getElementById("domTable");
+                var table = document.createElement('table');
+                table.setAttribute("id", "myTable");
 
-<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+                var tableBody = document.createElement('tbody');
+                table.appendChild(tableBody);
 
-<div id="myTable">
-</div>
-<br>
+                for (var i = 0; i < 2; i++) {
+                    var tr = document.createElement('tr');
+                    tableBody.appendChild(tr);
 
-<button onclick="myFunction()">Try it</button>
-<button onclick="addRow()">Add Row</button>
-<script>
-function myFunction() {
-    
-    var myTableDiv = document.getElementById("myTable");
-      
-    var table = document.createElement('TABLE');
-    
-    table.setAttribute("id","abc");
-    
-    var tableBody = document.createElement('TBODY');
-    table.appendChild(tableBody);
-      
-    for (var i=0; i<2; i++){
-       var tr = document.createElement('TR');
-       tableBody.appendChild(tr);
-       
-       for (var j=0; j<2; j++){
-           var td = document.createElement('TD');
-           td.width='75';
-           td.appendChild(document.createTextNode("Cell " + i + "," + j));
-           tr.appendChild(td);
-       }
-    }
-    myTableDiv.appendChild(table);  	
-}
-function addRow(){
-	var table = document.getElementById('abc');
-	var row = document.createElement('TR');
-	table.appendChild(row);
-	var td = document.createElement('TD');
-	
-	td.appendChild(document.createTextNode("Cell"));
-	td.appendChild(document.createTextNode("Cell 1"));
-	row.appendChild(td);
-	
-}
-</script>
-
-</body>
+                    for (var j = 0; j < 2; j++) {
+                        var td = document.createElement('td');
+                        td.appendChild(document.createTextNode("Cell " + i + "," + j));
+                        tr.appendChild(td);
+                    }
+                }
+                myTableDiv.appendChild(table);
+            }
+            function addRow() {
+                var table = document.getElementById("myTable");
+                row = table.insertRow(table.rows.length);
+                var i;
+                for (i = 0; i < table.rows[0].cells.length; i++) {
+                    row.insertCell(i).innerHTML = "Cell-" + i;
+                }
+            }
+            function addColumn() {
+                var table = document.getElementById("myTable");
+                var i;
+                for (i = 0; i < table.rows.length; i++) {
+                    table.rows[i].insertCell(table.rows[i].cells.length).innerHTML = "Column-" + i;
+                }
+            }
+            function delRows() {
+                var row = prompt("Please enter row number");
+                var table = document.getElementById("myTable");
+                table.deleteRow(row);
+            }
+            function delAlls() {
+                var elem = document.getElementById("myTable");
+                elem.parentNode.removeChild(elem);
+            }
+        </script>
+    </body>
 </html>
-
